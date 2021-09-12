@@ -26,8 +26,6 @@
                 flex-direction: column;
             }
             .top-bar, .middle-bar, .bottom-bar{
-                width: 100%;
-                height: 100%;
                 border: 2px black solid;
                 margin-top: 3px;
                 margin-bottom: 3px;
@@ -120,6 +118,11 @@
             }
 
 
+            #n1, #n7 *{
+                word-break: break-all;
+                overflow-x:auto;
+                overflow-y:auto;
+            }
             #n1, #n7{
                 background-color: #c6d9f1;
                 
@@ -153,8 +156,22 @@
             .buttons{
                 margin-left: 3px;
                 margin-right: 3px;
-                width: 15%;
-                height: auto;                
+                width: auto;
+                height: auto;
+
+                display: flex;
+                flex-direction: row;
+            }
+            .buttons *{
+                width: auto;
+                height: auto;
+                font-size: 24px;
+
+                margin-left: 16px;
+                margin-right: 16px;
+
+                text-decoration: none;
+                color:  crimson;
             }
         </style>
     </head>
@@ -162,7 +179,7 @@
         <div class="container">
             <div class="top-bar">
                 <div id="n1">
-                    <a href="">
+                    <a href="" style="width: 65%; height: auto;">
                         Laba №1 6Var (5)
                     </a>
                     <h1 id="x">
@@ -178,26 +195,33 @@
                         </div>
                         <div id="n3-5">
                             <div id="n3">
-                                <map name="but1">
-                                    <area shape="default" href="firstpage.html" target="_blank">
-                                </map>
-                                <img usemap="#but1" class="buttons" alt="img" src="area1.jpg">
-                                <map name="but2">
-                                    <area shape="default" href="secondpage.html" target="_blank">
-                                </map>  
-                                <img usemap="#but2" class="buttons" alt="img" src="area2.jpg">
-                                <map name="but3">
-                                    <area shape="default" href="thirdpage.html" target="_blank">
-                                </map>  
-                                <img usemap="#but3" class="buttons" alt="img" src="area3.jpg">
-                                <map name="but4">
-                                    <area shape="default" href="forthpage.html" target="_blank">
-                                </map>  
-                                <img usemap="#but4" class="buttons" alt="img" src="area4.jpg">
-                                <map name="but5">
-                                    <area shape="default" href="fifthpage.html" target="_blank">
-                                </map>                                
-                                <img usemap="#but5" class="buttons" alt="img" src="area5.jpeg">
+                                <ol class="buttons">
+                                    <li>
+                                        <a href="firstpage.html">
+                                            First
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="secondpage.html">
+                                            Second
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="thirdpage.html">
+                                            Third
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forthpage.html">
+                                            Fourth
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="fifthpage.html">
+                                            Fifth
+                                        </a>
+                                    </li>
+                                </ol>
                             </div>
                             <div id="n5">
                                 <ol>
@@ -242,7 +266,7 @@
             </div>
             <div class="bottom-bar">
                 <div id="n7">
-                    <ul>
+                    <ul style="width: 65%; height: auto;">
                         <li>
                             Тут могла бути ваша реклама:^)
                         </li>
