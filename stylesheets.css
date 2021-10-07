@@ -76,6 +76,9 @@ h1, h2{
     flex-direction: row !important;                
     align-items: flex-start;
     justify-content: center;
+
+    overflow-x:auto;
+    overflow-y:auto;
 }
 
 #n2{
@@ -100,9 +103,6 @@ h1, h2{
     flex-direction: row !important;                
     align-items: center;
     justify-content: center;
-
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
 }
 #n5{
     width: auto;
@@ -142,8 +142,6 @@ h1, h2{
     margin: 6px;
     padding: 6px;
     word-break: break-all;
-    overflow-x:auto;
-    overflow-y:auto;
 
     display: flex;
     flex-direction: column;
