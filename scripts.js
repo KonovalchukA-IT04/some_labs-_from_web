@@ -61,7 +61,7 @@ function FindArea() {
 window.onload = CookiesReload();
 function CookiesReload()
 {
-    if(document.cookie='')
+    if(document.cookie=='')
     {
         return;
     }
