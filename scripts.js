@@ -61,6 +61,11 @@ function FindArea() {
 window.onload = CookiesReload();
 function CookiesReload()
 {
+    if(document.cookie == "")
+    {
+        FunkyGeneration();
+        return;
+    }
     let de_way = confirm("Coowkies UwU: "+document.cookie+"\nSawe_it?")
     if(de_way)  
 	{
